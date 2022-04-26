@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Pagina de inicio</title>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/libre3.css">
+            <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+        <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+   
+        <nav 
+      class="navbar navbar-expand-lg  navbar navbar-dark bg-dark" th:fragment="navbar" 
+    >
+            <dark-mode-toggle 
+                    id="light-mode-toggle-1"
+                    appearance="toggle"                       
+                ></dark-mode-toggle>
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav">
+            <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+             Inicio
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                  <a class="dropdown-item bg-dark" href="/main"> <h5> Pagina de inicio </h5> </a>
+              </li>            
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Autor
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item bg-dark" href="/tablaAutor"><h5>Listar Autor</h5></a>
+              </li>
+              <li>
+                <a class="dropdown-item bg-dark" href="/cargarAutor"
+                  ><h5>Cargar Autor</h5></a
+                >
+              </li>
+            </ul>
+          </li>
+        </div>
+
+        <div class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Libro
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item bg-dark" href="/tablaLibro"><h5>Listar Libro</h5></a>
+              </li>
+              <li>
+                <a class="dropdown-item bg-dark" href="/cargarLibro"
+                  ><h5>Cargar Libro</h5></a
+                >
+              </li>
+            </ul>
+          </li>
+        </div>
+
+        <div class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Editorial
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item bg-dark" href="/tablaEditorial"><h5>Listar Editorial</h5></a>
+              </li>
+              <li>
+                <a class="dropdown-item bg-dark" href="/cargarEditorial"
+                  ><h5>Cargar Editorial</h5></a
+                >
+              </li>
+            </ul>
+          </li>
+            
+            <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Logout
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item bg-dark" href="/"><h5>Logout</h5></a>
+              </li>             
+            </ul>
+          </li>            
+        </div>
+      </div>
+    </nav>
+        <h2 class="border">Bienvenido A Egg Book Online</h2>
+    <h2 class="wave">Bienvenido A Egg Book Online</h2>
+  <audio controls="controls" class ="pat">
+    <source src="css/musica.mp3" type="audio/mpeg"> 
+  </audio>       
+    </body>
+</html>
